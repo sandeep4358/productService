@@ -6,7 +6,7 @@ MAINTAINER "SANDEEP KUMAR"
 #RUN     rm -rf /user/local/tomcat/webapps/*
 
 #now copy your project in that folder
-COPY ./target/Productservice.war /usr/tomcat/webapps/ROOT.war
+COPY ./target/Productservice.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 
