@@ -27,6 +27,7 @@ public class ProductController {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse> getAllProducts() {
+        log.info(" >> enter :: ");
         return productService.getAllProducts();
     }
 
