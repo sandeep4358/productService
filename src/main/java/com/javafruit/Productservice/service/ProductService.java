@@ -31,6 +31,7 @@ public class ProductService {
     public List<ProductResponse> getAllProducts() {
         List<Product> products = productRepository.findAll();
 
+        log.info("Product list fetched success.. ");
         return products.stream().map(this::mapToProductResponse).toList();
     }
 
